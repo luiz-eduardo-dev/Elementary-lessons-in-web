@@ -1,0 +1,155 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  background: url(../img/fundo.png)
+}
+.geral{
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+.topo{
+  width: 100%;
+  height: 350px;
+  background-color: rgb(42, 42, 42);
+}
+h1{
+  font-size: 40px;
+  font-weight: lighter;
+}
+p{
+  font-size: 18px;
+}
+.menu{
+  width: 100%;
+  height: 44px;
+  background: url(../img/barra.png);
+  opacity: 0.95;
+  text-align: center;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+}
+.menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: black;
+}
+.menu ul li{
+  display: inline-block;
+}
+.menu ul li a{
+  display: block;
+  color: #cacaca;
+  padding: 0.8em 3em;
+  width: 130px;
+  height: 17px;
+  border-bottom: 5px solid rgb(0,0,0,0);
+  border-radius: 0.208em;
+  font-family: "Flexo",arial,sans-serif;
+  text-decoration: none;
+  visibility: visible;
+}
+.menu ul li a:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+  color: #ff5722;
+}
+.menu ul li:hover{
+  height: 43.5px;
+  border-bottom: 4px solid #ff5722;
+  border-radius: 0px 0px 4px 4px;
+  transition: 0.2s;
+}
+section ul{
+  list-style: none;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:400px;
+  height: auto;
+  margin-bottom: 70px;
+}
+.conteudo{
+  font-family: "Flexo",arial,sans-serif;
+  background-color: rgb(255,255,255,0.5);
+  color: black;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 30px;
+  padding: 40px;
+  border-radius: 0.2em;
+  box-shadow: -0px -0px 4px 2px #c0c0c0;
+}
+.conteudo h2 h3{
+  color: #ff5722;
+}
+.conteudo p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  transition: 0.1s;
+  color: #ff5722;
+}
+span{
+  cursor: pointer;
+}
+span:hover{
+  transition: 0.1s;
+  color: #ff5722;
+}
+.rodape{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #cacaca;
+  background: url(../img/barra.png);
+  line-height: 50px;
+  font-family: verdana;
+  position: fixed;
+  display: block;
+  bottom: 0;
+}
+.rodape:hover{
+  transition: 0.2s;
+  color: #ff5722;
+}
+.margin{
+  margin: 8px;
+}
+#voltar-topo {
+  background-color: rgb(42, 42, 42);
+  border-radius: 50%;
+  box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+  color: #cacaca;
+  text-decoration:none;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+  padding-bottom: 20px;
+  height: 40px;
+  width: 60px;
+  position: fixed;
+  right: 22px;
+  bottom: 60px;
+}
+#voltar-topo:hover {
+    transition: 0.2s;
+    color: #ff5722;
+    border: 3px solid #ff5722;
+}

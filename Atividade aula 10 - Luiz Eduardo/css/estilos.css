@@ -1,0 +1,609 @@
+/* Alertas: */
+@charset "UTF-8";
+/* Configurações gerais da Página: */
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background: url(../img/standard/fundo.png);
+}
+main{
+  margin: 0;
+}
+/* Responsividade para telas maiores: */
+@media screen and (min-width: 881px) {
+  /* Logotipo do site */
+  .logo{
+    margin-left: 4.5vw;
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 350px;
+  }
+  .logo img{
+    height: 60px;
+    width: auto;
+    float: left;
+  }
+  .logo h2{
+    margin-left: 30px;
+    margin-top: 14px;
+    height: 30px;
+    width: 380px;
+    color: white;
+    text-shadow: 0px 0px 2px rgba(60, 60, 60, 1);
+  }
+  /* Barra de Navegação: */
+  .navbar{
+    float: right;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar li a, .navbar li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+  }
+  /* Seções e Conteúdo: */
+  .content p,.content ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: .875em;
+  }
+  .content h1{
+    color: rgb(0,138,188);
+    font-size: 1.875em;
+    margin-bottom: 10px;
+  }
+  .content h2{
+    font-size: 1.375em;
+  }
+  .content ul{
+    margin-left: 25%;
+    text-align: left;
+  }
+  .content li{
+    margin-right: 30%;
+  }
+  .content cite{
+    font-size: 2.5vh;
+  }
+  .content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 0px;
+    max-width: 50%;
+    max-height: 800px;
+  }
+  .content figure p{
+    text-align: center;
+    font-size: .775em;
+  }
+  /* Botão de Retornar ao topo: */
+  .back-to-top-button{
+    background-color:rgb(0,138,188);
+    border-radius: 0.1em;
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    height: 40px;
+    width: 60px;
+    position: fixed;
+    right: 4.5vw;
+    bottom: 30px;
+  }
+  .back-to-top-button:hover{
+    transition: 0.1s;
+    transform: scale(0.98);
+    border: 3px solid rgb(0,138,188);;
+    background-color: white;
+    height: 36px;
+    width: 57px;
+    color: rgb(0,138,188);
+  }
+  /*Rodapé da página*/
+  .footer-text,.footer-a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 2.75vh;
+  }
+}
+/* Responsividade para telas médias: */
+@media screen and (max-width: 879px) {
+  /* Logotipo do site */
+  .logo{
+    position: relative;
+    margin-left: 4.5vw;
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 350px;
+  }
+  .logo h2{
+    margin-left: 10vw;
+    position: absolute;
+    line-height: 6vh;
+    font-size: 2.75vw;
+    text-align: left;
+    width: 300px;
+    color: white;
+    text-shadow: 0px 0px 2px rgba(60, 60, 60, 1);
+  }
+  .logo img{
+    height: 6vh;
+    width: auto;
+    float: left;
+  }
+  /* Barra de Navegação: */
+  .navbar{
+    position: fixed;
+    float: right;
+    width: 100%;
+    height: 6vh;
+    margin: none;
+  }
+  .navbar li a, .navbar li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-size: 2.4vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 6vh;
+  }
+  /* Seções e Conteúdo: */
+  .content p,.content ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2vh;
+  }
+  .content h1{
+    color: rgb(0,138,188);
+    font-size: 1.575em;
+    margin-bottom: 10px;
+  }
+  .content h2{
+    font-size: 1.175em;
+  }
+  .content ul{
+    margin-left: 15%;
+    text-align: left;
+  }
+  .content li{
+    margin-right: 10%;
+  }
+  .content cite{
+    font-size: 0.8em;
+  }
+  .content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 0px;
+    max-width: 80%;
+    max-height: 800px;
+  }
+  .content figure p{
+    text-align: center;
+    font-size: .775em;
+  }
+  /* Botão de Retornar ao topo: */
+  .back-to-top-button{
+    background-color: rgb(0,138,188);
+    border-radius: 5%;
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    padding-bottom: 16px;
+    height: 33px;
+    width: 49px;
+    position: fixed;
+    right: 4.5vw;
+    bottom: 30px;
+  }
+  .back-to-top-button:hover{
+    transition: 0.1s;
+    transform: scale(0.98);
+    border: 2px solid rgb(0,138,188);
+    background-color: white;
+    height: 29,115px;
+    width: 44,865px;
+    color: rgb(0,138,188);
+  }
+  /*Rodapé da página*/
+  .footer-text,.footer-a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 2.25vh;
+  }
+}
+/* Responsividade para telas menores: */
+@media screen and (max-width: 767px) {
+  /* Logotipo do site */
+  .logo{
+    position: relative;
+    margin-left: 4.5vw;
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 350px;
+  }
+  .logo img{
+    height: 6vh;
+    width: auto;
+    float: left;
+  }
+  .logo h2{
+    margin-left: 11.25vw;
+    margin-top: 0;
+    position: absolute;
+    line-height: 6vh;
+    font-size: 2.75vw;
+    text-align: left;
+    width: auto;
+    color: white;
+    text-shadow: 0px 0px 2px rgba(60, 60, 60, 1);
+  }
+  /* Barra de Navegação: */
+  .navbar{
+    position: fixed;
+    float: right;
+    width: 100%;
+    height: 6vh;
+    margin: none;
+  }
+  .navbar li a, .navbar li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-size: 2.4vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 6vh;
+  }
+  /* Seções e Conteúdo: */
+  .content p,.content ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2vh;
+  }
+  .content h1{
+    color: rgb(0,138,188);
+    font-size: 3.25vh;
+    margin-bottom: 10px;
+  }
+  .content h2{
+    font-size: .875em;
+  }
+  .content ul{
+    margin-left: 15%;
+    text-align: left;
+  }
+  .content li{
+    margin-right: 10%;
+  }
+  .content cite{
+    font-size: 0.75em;
+  }
+  .content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    max-width: 80%;
+    max-height: 800px;
+  }
+  .content figure p{
+    text-align: center;
+    font-size: .475em;
+  }
+  /* Botão de Retornar ao topo: */
+  .back-to-top-button{
+    background-color: rgb(0,138,188);
+    border-radius: 5%;
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    padding-bottom: 16px;
+    height: 33px;
+    width: 49px;
+    position: fixed;
+    right: 4.5vw;
+    bottom: 30px;
+  }
+  .back-to-top-button:hover{
+    transition: 0.1s;
+    transform: scale(0.98);
+    border: 2px solid rgb(0,138,188);
+    background-color: white;
+    height: 29,115px;
+    width: 44,865px;
+    color: rgb(0,138,188);
+  }
+  /*Rodapé da página*/
+  .footer-text,.footer-a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 2vh;
+  }
+}
+/* Configurações gerais de Estilização: */
+/* Cabeçalho: */
+.top-header{
+  position: fixed;
+  text-align: center;
+  width: auto;
+  font-family: arial,sans-serif;
+  z-index: 1;
+}
+/* Barra de Navegação: */
+.navbar ul{
+  text-align: center;
+  float: right;
+  margin: none;
+  background: #1464B4;
+  margin-right: 4.5vw;
+  margin-left: 4.5vw;
+}
+.border-bottom-radius{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.navbar li{
+  display: inline-block;
+  padding: none;
+  margin: none;
+}
+.navbar li a{
+  color: #FFF;
+}
+.navbar li:hover a, #navbar li span{
+  transition: 0.1s;
+  background: #FFF;
+  color: #0074D9;
+  text-decoration: none;
+}
+.border-bottom-l-a{
+  border-bottom-left-radius:10px;
+}
+.border-bottom-r-a{
+  border-bottom-right-radius: 10px;
+}
+/* Banner do Site: */
+.div-banner{
+  max-width: 100%;
+  background-color: #008abc;
+  height: auto;
+}
+.banner{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+/* Seções e Conteúdo: */
+
+.content{
+  font-family: arial,sans-serif;
+  background-color: rgb(255,255,255,0.5);
+  color: black;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 4.5vw;
+  padding: 40px;
+  border-radius: 0.4em;
+  box-shadow: -0px -0px 4px 2px #c0c0c0;
+}
+.content h2{
+  color: #ff5722;
+  margin-bottom: 15px;
+}
+.content h3{
+  font-size: 1.5vw;
+  color: grey;
+  margin-bottom: 10px;
+}
+.content span{
+  cursor: pointer;
+}
+.content span:hover{
+  transition: 0.1s;
+  transform: scale(1.1);
+  color: #1464B4;
+}
+.content li{
+  padding: 2px;
+}
+.content .bibliografia{
+  background-color: rgb(50, 160, 240, 0.1);
+  margin: 60px auto;
+  margin-bottom: 0;
+  padding: 1px 16px;
+  max-width: 750px;
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+/* Tabelas: */
+.content table{
+  width: 100%;
+  height: auto;
+  font-family: monospace;
+  font-weight: lighter;
+  text-shadow: 0px 1px 2px white;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+.table-round-corner {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    overflow:hidden;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-collapse:separate;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+th, td{
+  padding: 10px;
+  font-size: 1.5vw;
+  text-align: left;
+}
+th{
+  background-color: rgb(50, 160, 240, 0.55);
+}
+td{
+  background-color: rgb(50, 160, 240, 0.075);
+}
+tr:nth-child(even){
+  background-color: rgb(50, 160, 240, 0.1);
+}
+.text-align{
+  text-align: center;
+}
+.tr-body:hover{
+  background-color: rgb(25, 118, 210, 0.25);
+}
+.td-img-padding{
+  padding: 5px;
+}
+.table-fig *{
+  width: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  float: left;
+  display: inline;
+}
+.table-img{
+  width: 2.5vw;
+  height: auto;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.table-img:hover{
+  cursor: pointer;
+}
+/* Rodapé do Site */
+footer{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 10px 0px;
+  background-color:rgb(0,138,188);
+  font-family: arial,sans-serif;
+  font-weight: 600;
+  display: block;
+  bottom: 0;
+}
+.border-top-radius{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.footer-a:hover{
+  text-decoration: underline;
+}
+/* Barra de navegação *atividade* */
+header{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.menu{
+  display: block;
+  height:60px;
+  padding-right: 4.5vw;
+  text-align:center;
+}
+.menu ul{
+  top: 0;
+  list-style-type:none;
+  float: right;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+  background-color:rgb(0,138,188);
+}
+.menu li{
+  font-family: arial,sans-serif;
+  display: inline-block;
+  text-align: right;
+}
+.menu li a{
+  display:block;
+  color:white;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align:center;
+  margin-right: -5px;
+  padding: 14px 16px;
+  line-height: 32px;
+  text-decoration:none;
+  transition-duration: 0.4s;
+}
+.menu a:hover{
+  background-color:white;
+  color:rgb(0,138,188);
+}
+.content p{
+  text-align: left;
+}
+.content aside{
+  background-color: rgb(0,0,0,0.05);
+  float: right;
+  width: 55%;
+}
+.content aside figure{
+  background-color: rgb(0,0,0,0.05);
+  width: 100%;
+}
+.content aside p{
+  text-align: center;
+  margin: 16px;
+}
+#esquema{
+  width: 40%;
+}
+.thumb{
+  background-color: rgb(0,0,0,0.05);
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 1px;
+}
+.content .thumb figure{
+  background-color: rgb(0,0,0,0.05);
+}
+.thumb p{
+  text-align: center;
+  margin: 20px;
+}
